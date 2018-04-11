@@ -13,7 +13,7 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
         crossorigin="anonymous"></script>
 
-    <title>Andrew's World</title>
+    <title>About Andrew's World</title>
 </head>
 
 <body>
@@ -46,24 +46,15 @@
 
     <div class="container">
 
-        <h1>Andrew's World Blog</h1>
+        <h1>About My Blog</h1>
         {% load static %}
         <img src="{% static 'posts/home.jpg' %}" class="img-fluid" />
 
-        <h2>Latest Posts</h2>
+        <h2>Andrew Petz</h2>
 
         <hr />
 
-        {% for post in posts.all %}
-
-        <h3>
-            <a href="{% url 'post_detail' post.id %}">{{ post.title }}</a>
-        </h3>
-        <h4>
-            <i class="far fa-clock"></i> {{ post.pub_date_pretty }}</h4>
-        <img src="{{ post.image.url }}" class="img-fluid" />
-        <p>{{ post.summary }}</p>
-        {% endfor %}
+        <p>Blogger extraordinaire!</p>
 
     </div>
 
